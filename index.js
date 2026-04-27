@@ -9,8 +9,8 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT || 3002;
-const NOTIFICATION_SERVICE_URL = process.env.NOTIFICATION_SERVICE_URL || 'http://127.0.0.1:3007';
-const USER_SERVICE_URL = process.env.USER_SERVICE_URL || 'http://127.0.0.1:3001';
+const NOTIFICATION_SERVICE_URL = process.env.NOTIFICATION_SERVICE_URL || 'http://notification-service:3006';
+const USER_SERVICE_URL = process.env.USER_SERVICE_URL || 'http://user-service:3001';
 const INTERNAL_SERVICE_TOKEN = process.env.INTERNAL_SERVICE_TOKEN || 'vaultrix-internal-token';
 
 connectDB();
